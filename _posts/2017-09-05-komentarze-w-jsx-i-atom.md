@@ -1,4 +1,4 @@
-Siedzę właśnie nad kolejną aplikacją pisaną z nieocenioną pomocą React-a. Od zawsze denerwowało mnie jedno -- **wstawianie komentarzy w JSX**.
+Siedzę właśnie nad kolejną aplikacją pisaną z nieocenioną pomocą React-a. Wszystko super, ale od zawsze denerwował mnie jeden drobiazg -- **wstawianie komentarzy w JSX**.
 
 Na początek: czym jest JSX? To, jak mówią, ["syntax extension to JavaScript"](https://facebook.github.io/react/docs/introducing-jsx.html), czyli rozszerzenie składni języka JavaScript. Logiczne zatem, że komentarze powinno się wstawiać tak jak w JS. Niezupełnie... 
 
