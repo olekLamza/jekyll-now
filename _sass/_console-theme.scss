@@ -4,58 +4,6 @@ body {
 	color: $frontColor;
 }
 
-a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.highlight {
-	background-color: #282828;
-	border: none;
-}
-
-code {
-	font-family: 'Cutive Mono', monospace;
-	color: #abe2ff;
-}
-
-article>header {
-	
-	h1, h2, h3 {
-		font-family: 'Inconsolata', monospace;
-		font-size: 1em;
-		color: #eee;
-		font-weight: bold;
-		margin-bottom: 0;
-		text-transform: lowercase;
-		
-		&:before {
-			content: "/**\A  * ";
-			white-space: pre;
-		}
-		
-	}
-	
-	p.date {
-		font-family: 'Inconsolata', monospace;
-		margin-top: 0;
-		color: #eee;
-		
-		&:before {
-			content: " * \A  * @date ";
-			white-space: pre;
-			font-weight: bold;
-		}
-		
-		&:after {
-			content: "\A  */";
-			white-space: pre;
-			font-weight: bold;
-		}
-	}
-}
-
-
 
 .masthead {
 	border: none;

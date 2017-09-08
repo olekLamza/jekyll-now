@@ -186,11 +186,11 @@ img {
 .wrapper-masthead {
 	margin-bottom: 50px;
 	border-bottom: 3px solid $frontDarkestColor;
+	background-color: $frontDarkestOfDarkColor;
 }
 
 .masthead {
 	padding: 20px 0;
-	background-color: #111;
 	
 	h1 {
 		&:before {
@@ -313,14 +313,19 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 
-.highlight .gi {
-    color: #3ee666;
-    background-color: #444;
-}
+.highlight {
+	background-color: #282828;
+	border: none;
 
-.highlight .gd {
-    color: #fb414f;
-    background-color: #444;
+	.gi {
+		color: #3ee666;
+		background-color: #444;
+	}
+
+	.gd {
+		color: #fb414f;
+		background-color: #444;
+	}
 }
 
 code {
