@@ -18,16 +18,17 @@ html {
 }
 
 body {
-  font-size: 16px/1.4;
-  background-color: $backColor;
-  color: $frontColor;
+	font-family: $mainFont;
+	font-size: 16px/1.4;
+	background-color: $backColor;
+	color: $frontColor;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+	margin: 0 auto;
+	max-width: 740px;
+	padding: 0 10px;
+	width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,7 +96,7 @@ article>header {
 }
 
 p {
-  margin: 15px 0;
+	margin: 15px 0;
 }
 
 a {
@@ -109,56 +110,56 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+	margin: 15px 0;
+	padding-left: 30px;
 }
 
 ul {
-  list-style-type: disc;
+	list-style-type: disc;
 }
 
 ol {
-  list-style-type: decimal;
+	list-style-type: decimal;
 }
 
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+	margin: 0;
 }
 
 ul ul, ol ul {
-  list-style-type: circle;
+	list-style-type: circle;
 }
 
 em, i {
-  font-style: italic;
+	font-style: italic;
 }
 
 strong, b {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
-  max-width: none;
+	max-width: none;
 }
 
 .date {
-  font-style: italic;
-  color: $frontDarkerColor;
+	font-style: italic;
+	color: $frontDarkerColor;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $frontLighterColor;
+	color: $black;
+	background: $frontLighterColor;
 }
 ::selection {
-  color: $black;
-  background: $frontLighterColor;
+	color: $black;
+	background: $frontLighterColor;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -182,17 +183,17 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .masthead {
-  padding: 20px 0;
-  background-color: #111;
-  border-bottom: 3px solid $frontDarkestColor;
+	padding: 20px 0;
+	background-color: #111;
+	border-bottom: 3px solid $frontDarkestColor;
 
-  @include mobile {
-    text-align: center;
-  }
+	@include mobile {
+		text-align: center;
+	}
 }
 
 .site-info {
@@ -210,33 +211,33 @@ img {
 }
 
 .site-name {
-  margin: 0;
-  color: $frontDarkestColor;
-  cursor: pointer;
-  font-size: 28px;
-  letter-spacing: 1px;
+	margin: 0;
+	color: $frontDarkestColor;
+	cursor: pointer;
+	font-size: 28px;
+	letter-spacing: 1px;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $frontDarkestColor;
-  font-size: 16px;
+	margin: -5px 0 0 0;
+	color: $frontDarkestColor;
+	font-size: 16px;
 
-  @include mobile {
-    margin: 3px 0;
-  }
+	@include mobile {
+		margin: 3px 0;
+	}
 }
 
 nav {
-  float: right;
-  margin-top: 23px;
+	float: right;
+	margin-top: 23px;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
+	@include mobile {
+		float: none;
+		margin-top: 9px;
+		display: block;
+		font-size: 16px;
+	}
 
   a {
     margin-left: 20px;
@@ -256,33 +257,33 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $frontDarkestColor;
+	padding-bottom: 2em;
+	border-bottom: 1px solid $frontDarkestColor;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+	padding-bottom: 1em;
+	border-bottom: none;
 }
 
 .post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $frontDarkerColor;
-    padding: 0.1em 1em;
-    color: $frontDarkestColor;
-    font-size: 22px;
-    font-style: italic;
-  }
+	blockquote {
+		margin: 1.8em .8em;
+		border-left: 2px solid $frontDarkerColor;
+		padding: 0.1em 1em;
+		color: $frontDarkestColor;
+		font-size: 22px;
+		font-style: italic;
+	}
 
-  .comments {
-    margin-top: 10px;
-  }
+	.comments {
+		margin-top: 10px;
+	}
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
+	.read-more {
+		text-transform: uppercase;
+		font-size: 15px;
+	}
 }
 
 .wrapper-footer {
@@ -293,8 +294,8 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
-  text-align: center;
+	padding: 20px 0;
+	text-align: center;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
