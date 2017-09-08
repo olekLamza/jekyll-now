@@ -310,12 +310,6 @@ footer {
 }
 
 
-code {
-	font-family: $codeFont;
-	color: $activeColor;
-}
-
-
 @import "highlights";
 
 .highlight {
@@ -333,3 +327,10 @@ code {
 	}
 }
 
+code {
+	font-family: $codeFont;
+}
+
+:not(.highlight) code {
+	color: $activeColor;
+}
