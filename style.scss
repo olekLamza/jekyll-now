@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  font-size: 16px/1.4;
+  background-color: $backColor;
+  color: $frontColor;
 }
 
 .container {
@@ -31,37 +31,34 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+	font-size: 1em;
+	line-height: 1.7;
+	margin: 1em 0 15px;
+	padding: 0;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
+	@include mobile {
+		line-height: 1.4;
+	}
 }
 
 h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
+  font-size: 1em;
+
+	&:before {
+		content: "# ";
+	}
 }
 
-h2 {
-  font-size: 24px;
+h2 {	
+	&:before {
+		content: "## ";
+	}
 }
 
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
+h2 {	
+	&:before {
+		content: "### ";
+	}
 }
 
 p {
@@ -69,12 +66,13 @@ p {
 }
 
 a {
-  color: $blue;
-  text-decoration: none;
+	color: $frontLighterColor;
+	text-decoration: underline;
 	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
+	
+	&:hover, &:active {
+		color: $activeColor;
+	}
 }
 
 ul, ol {
@@ -117,17 +115,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $frontDarkerColor;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $frontLighterColor;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $frontLighterColor;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -156,38 +154,26 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  background-color: #111;
+  border-bottom: 3px solid $frontDarkestColor;
 
   @include mobile {
     text-align: center;
   }
 }
 
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
 .site-info {
-  float: left;
+	float: left;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+	a {
+		text-decoration: none;
+	}
+
+	@include mobile {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 .site-name {
@@ -212,9 +198,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  margin-top: 23px;
 
   @include mobile {
     float: none;
@@ -225,7 +209,6 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -254,7 +237,7 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $frontDarkerColor;
     padding: 0.1em 1em;
     color: $gray;
     font-size: 22px;
@@ -272,10 +255,10 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+    margin-top: 50px;
+    border-top: 3px solid $frontDarkestColor;
+    border-bottom: none;
+    background-color: $frontDarkestOfDarkColor;
 }
 
 footer {
@@ -286,7 +269,14 @@ footer {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
 
-//themes
-@import "console-theme";
+.highlight .gi {
+    color: #3ee666;
+    background-color: #444;
+}
+
+.highlight .gd {
+    color: #fb414f;
+    background-color: #444;
+}
+
