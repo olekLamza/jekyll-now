@@ -66,10 +66,9 @@ article>header {
 
 .masthead {
 	border: none;
-	font-family: 'Cutive Mono', monospace;
 
-	h1 {
-		font-family: 'Cutive Mono', monospace;
+	.site-name {
+		font-family: 'Inconsolata', monospace;
 		color: #eee;
 		
 		a {
@@ -88,6 +87,10 @@ article>header {
     border-top: 3px solid #444;
     border-bottom: none;
     background-color: #111;
+}
+
+nav a {
+	text-decoration: none;
 }
 
 a, nav a, nav a:visited {
