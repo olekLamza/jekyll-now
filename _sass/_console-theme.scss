@@ -1,5 +1,55 @@
 body {
+	font-family: 'Inconsolata', monospace
+	color: #ccc;
+	background-color: #222;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.highlight {
+	background-color: #282828;
+	border: none;
+}
+
+code {
 	font-family: 'Anonymous Pro', monospace;
-	color: #f8f8f8;
-	background-color: #444;
+	color: #abe2ff;
+}
+
+article>header {
+	h1, h2, h3 {
+		font-size: 1.1em;
+		font-weight: bold;
+		
+		&:before {
+			content: "/**\A * ";
+			white-space: pre;
+		}
+		
+	}
+	
+	p.date {
+		&:before {
+			content: "\A * \A * @date ";
+			white-space: pre;
+		}
+		
+		&:after {
+			content: "\A */";
+			white-space: pre;
+		}
+	}
+}
+
+.highlight .gi {
+    color: #3ee666;
+    background-color: #444;
+}
+
+.highlight .gd {
+    color: #fb414f;
+    background-color: #444;
 }
