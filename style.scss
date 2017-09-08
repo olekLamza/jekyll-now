@@ -61,6 +61,39 @@ h2 {
 	}
 }
 
+article>header {
+	
+	h1 {
+		color: #eee;
+		font-weight: bold;
+		margin-bottom: 0;
+		text-transform: lowercase;
+		
+		&:before {
+			content: "/**\A  * ";
+			white-space: pre;
+		}
+		
+	}
+	
+	p.date {
+		margin-top: 0;
+		color: #eee;
+		
+		&:before {
+			content: " * \A  * @date ";
+			white-space: pre;
+			font-weight: bold;
+		}
+		
+		&:after {
+			content: "\A  */";
+			white-space: pre;
+			font-weight: bold;
+		}
+	}
+}
+
 p {
   margin: 15px 0;
 }
@@ -178,10 +211,8 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $frontDarkestColor;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -226,7 +257,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $frontDarkestColor;
 }
 
 .posts > .post:last-child {
@@ -280,3 +311,7 @@ footer {
     background-color: #444;
 }
 
+code {
+	font-family: 'Cutive Mono', monospace;
+	color: $activeColor;
+}
