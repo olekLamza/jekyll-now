@@ -41,7 +41,7 @@ article>header {
 		color: #eee;
 		
 		&:before {
-			content: " * @date ";
+			content: " * \A  * @date ";
 			white-space: pre;
 			font-weight: bold;
 		}
