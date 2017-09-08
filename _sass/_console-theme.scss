@@ -15,7 +15,7 @@ a {
 }
 
 code {
-	font-family: 'Anonymous Pro', monospace;
+	font-family: 'Cutive Mono', monospace;
 	color: #abe2ff;
 }
 
@@ -66,9 +66,15 @@ article>header {
 
 .masthead {
 	border: none;
-	
+	font-family: 'Cutive Mono', monospace;
+
 	h1 {
 		font-family: 'Cutive Mono', monospace;
+		color: #eee;
+		
+		a {
+			text-decoration: none;
+		}
 	}
 }
 
@@ -84,3 +90,10 @@ article>header {
     background-color: #111;
 }
 
+a, nav a, nav a:visited {
+	color: #fff;
+}
+
+a:hover {
+	color: #4183C4;
+}
