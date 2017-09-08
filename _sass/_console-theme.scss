@@ -64,6 +64,14 @@ article>header {
     background-color: #444;
 }
 
+.masthead {
+	border: none;
+	
+	h1 {
+		font-family: 'Cutive Mono', monospace;
+	}
+}
+
 .wrapper-masthead {
     background-color: #111;
     border-bottom: 3px solid #444;
@@ -72,6 +80,7 @@ article>header {
 .wrapper-footer {
     margin-top: 50px;
     border-top: 3px solid #444;
+    border-bottom: none;
     background-color: #111;
 }
 
