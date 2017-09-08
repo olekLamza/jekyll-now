@@ -4,7 +4,7 @@ Na początek: czym jest JSX? To, jak mówią, ["syntax extension to JavaScript"]
 
 Ze względu na dziwną mieszankę składniową w JSX (taki JS-owo-HTML-owy konglomerat), nie można tu stosować ani komentarzy HTML-owych, czyli `<!-- -->`, ani (bezpośrednio) javascriptowych (`//`, `/* */`). Spójrzmy na przykład:
 
-```javascript
+```html
 render() {
   return (
     <div>
@@ -17,11 +17,9 @@ render() {
 
 Jeżeli chcemy zakomentować komponent `A`, musimy najpierw potraktować go jako JavaScript (czyli otoczyć blokiem `{ }`), a nastepnie w tym JavaScripcie wstawić komentarz blokowy:
 ```diff
-    ...
 -     <A />
 +     {/* <A /> */}
       <B />
-    ...
 ```
 
 Trzeba się nieźle namachać klawiaturą ;)
