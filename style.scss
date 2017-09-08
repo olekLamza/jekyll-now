@@ -31,6 +31,11 @@ body {
 	width: 100%;
 }
 
+p {
+	margin: 15px 0;
+	line-height: 1.5em;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-size: 1em;
 	line-height: 1.7;
@@ -93,10 +98,6 @@ article>header {
 			font-weight: bold;
 		}
 	}
-}
-
-p {
-	margin: 15px 0;
 }
 
 a {
@@ -184,13 +185,23 @@ img {
 
 .wrapper-masthead {
 	margin-bottom: 50px;
+	border-bottom: 3px solid $frontDarkestColor;
 }
 
 .masthead {
 	padding: 20px 0;
 	background-color: #111;
-	border-bottom: 3px solid $frontDarkestColor;
-
+	
+	h1 {
+		&:before {
+			content: "";
+		}
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
 	@include mobile {
 		text-align: center;
 	}
