@@ -27,6 +27,7 @@ article>header {
 		color: #eee;
 		font-weight: bold;
 		margin-bottom: 0;
+		text-transform: lowercase;
 		
 		&:before {
 			content: "/**\A  * ";
