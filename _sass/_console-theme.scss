@@ -41,13 +41,15 @@ article>header {
 		color: #eee;
 		
 		&:before {
-			content: " \A  * @date ";
+			content: " * @date ";
 			white-space: pre;
+			font-weight: bold;
 		}
 		
 		&:after {
 			content: "\A  */";
 			white-space: pre;
+			font-weight: bold;
 		}
 	}
 }
