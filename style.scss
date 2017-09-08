@@ -246,7 +246,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+//      color: $blue;
     }
   }
 }
@@ -312,6 +312,6 @@ footer {
 }
 
 code {
-	font-family: 'Cutive Mono', monospace;
+	font-family: $codeFont;
 	color: $activeColor;
 }
