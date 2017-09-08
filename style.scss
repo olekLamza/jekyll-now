@@ -219,7 +219,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $frontDarkestColor;
   font-size: 16px;
 
   @include mobile {
@@ -270,7 +270,7 @@ nav {
     margin: 1.8em .8em;
     border-left: 2px solid $frontDarkerColor;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $frontDarkestColor;
     font-size: 22px;
     font-style: italic;
   }
