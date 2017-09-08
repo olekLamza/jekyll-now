@@ -17,11 +17,9 @@ render() {
 
 Jeżeli chcemy zakomentować komponent `A`, musimy najpierw potraktować go jako JavaScript (czyli otoczyć blokiem `{ }`), a nastepnie w tym JavaScripcie wstawić komentarz blokowy:
 ```diff
-    ...
 -     <A />
 +     {/* <A /> */}
       <B />
-    ...
 ```
 
 Trzeba się nieźle namachać klawiaturą ;)
