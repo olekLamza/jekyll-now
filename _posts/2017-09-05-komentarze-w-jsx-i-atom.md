@@ -26,6 +26,6 @@ Jeżeli chcemy zakomentować komponent `A`, musimy najpierw potraktować go jako
 
 Trzeba się nieźle namachać klawiaturą ;)
 
-W większości edytorów są podpięte przyjemne skróty klawiaturowe do wstawiania komentarzy, ale zwykle tylko tych jednowierszowych, a już na pewno w standardzie nie ma takich czarów, jakie tu są potrzebne. Nie inaczej jest w [Atomie](https://atom.io/), którego używam do aplikacji webowych. Do przełączania komentarza w zaznaczonych liniach służy skrót `Ctrl-/`. I tyle.
+W większości edytorów są podpięte przyjemne skróty klawiaturowe do wstawiania komentarzy, ale zwykle tylko tych jednowierszowych, a już na pewno w standardzie nie ma takich czarów, jakie tu są potrzebne. Nie inaczej jest w [Atomie](https://atom.io/), którego używam do aplikacji webowych. Do przełączania komentarza w zaznaczonych liniach służy skrót *Ctrl+/*. I tyle.
 
-Do tej pory nie udało mi się zmotywować, by wpisać w google magicznych słów "jsx comment atom", i jak dureń wstawiałem te `{/*` i `*/}`... Wczoraj się stało! Skromna paczuszka **jsx-comment** robi co do niej należy. W dodatku funkcja jest dostępna pod przyjaznym skrótem `Ctrl-Alt-/`. Nic więcej do szczęścia nie trzeba!
+Do tej pory nie udało mi się zmotywować, by wpisać w google magicznych słów "jsx comment atom", i jak dureń wstawiałem te `{/*` i `*/}`... Wczoraj się stało! Skromna paczuszka **jsx-comment** robi co do niej należy. W dodatku funkcja jest dostępna pod przyjaznym skrótem *Ctrl+Alt+/*. Nic więcej do szczęścia nie trzeba!
